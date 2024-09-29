@@ -18,7 +18,7 @@ export default function Cart() {
     let userEmail = localStorage.getItem("userEmail");
 
     try {
-      let response = await fetch("http://localhost:5000/api/auth/orderData", {
+      let response = await fetch("/api/auth/orderData", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
